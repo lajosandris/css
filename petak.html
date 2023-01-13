@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="petak.css">
+</head>
+<body>
+    <form action="" style="border: 1px solid #ccc;">
+        <div class="container">
+            <h1>Forma za prijavu</h1>
+            <p>Molim unesite podatke u formu za kreiranje novog racuna.</p>
+            <hr>
+
+            <label for="email"><b>Email</b></label>
+            <input id="email" type="text" name="email" required placeholder="unesite email">
+
+            <label for="psw"><b>Lozinka</b></label>
+            <input id="psw" type="password" name="psw" required placeholder="unesite lozinku">
+
+            <label for="psw-repeat"><b>Ponovite lozinku</b></label>
+            <input id="psw-repeat" type="password" name="psw-repeat" required placeholder="Ponovite lozinku">
+
+            <label>
+                <input type="checkbox" checked name="remember" style="margin-bottom: 15px;"> Zapamti me
+            </label>
+
+            <p>Prilikom kreiranja racuna pristajete na nase <a href="#" style="color: dodgerblue;">Uvjete koristenja</a></p>
+            <div class="clearfix">
+                <button class="cancelbtn" type="button">Odustani</button>
+                <button class="signupbtn" type="submit">Prijava</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+</html>
