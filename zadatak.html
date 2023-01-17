@@ -28,6 +28,37 @@
         padding: 5px 10px;
        border: 1px solid blue;
       }
+
+      a{
+          color: red;
+          text-decoration: none;
+      }
+
+      .cel{
+          background-color: yellow;
+      }
+
+      .cel:hover{
+          background-color: lightgreen;
+          cursor: pointer;
+      }
+
+      a:visited{
+          color: magenta;
+      }
+
+      a:active{
+          color: blue;
+        
+      }
+      
+      .cel2{
+          background-color: yellow;
+      }
+
+      .cel2:hover{
+        background-color: red;
+      }
       
       </style>
 
@@ -35,9 +66,9 @@
 <body>
     <table>
         <tr>
-            <td rowspan="4">A</td>
+            <td rowspan="4" class="cel"><a href="https://www.algebra.hr/">A</a></td>
             <td>B</td>
-            <td colspan="2">C</td>
+            <td colspan="2" class="cel2">C</td>
         </tr>
         <tr>
             <td colspan="3">D</td>
@@ -47,7 +78,7 @@
             <td rowspan="2">F</td>
         </tr>
         <tr>
-            <td>G</td>
+            <td class="cel"><a href="https://www.google.com/" target="_blank">G</a></td>
             <td>H</td>
         </tr>
     </table>
