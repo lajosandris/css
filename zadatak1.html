@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gradovi{
+            list-style-type: upper-alpha;
+        }
+        .rijeke{
+            list-style-type: lower-alpha;
+        }
+      
+
+        ::marker{
+            color: red;
+        }
+
+        p::first-letter{
+            color: blue;
+            font-size: xx-large;
+        }
+           
+        span::after{
+            content:  "\2713";
+            color: green;
+        }
+
+        #section1{
+            display: block;
+            border: 2px solid black;
+        }
+
+        a::before{
+            content: "\2023";
+            color: red;
+        }
+        ul{
+            list-style-type: none;
+        }
+
+        hr{
+            border: 2px dotted red;
+        }
+
+        a:visited{
+            color: magenta;
+        }
+
+        a:hover{
+            color: yellow;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Zadatak 1</h1>
+    <section id="section1">
+    <p>1 Koji je glavni grad hrvatske?</p>
+
+    <ol class="gradovi">
+        <li>Koprivnica</li>
+        <li>Osijek</li>
+        <li> <span> Zagreb</span></li>
+        <li>Rijeka</li>
+    </ol>
+</section>
+    <hr>
+<section id="section1">
+    <p>2 Koja je rijeka koja protjece kroz Hrvatsku najduza?</p>
+
+    <ol class="rijeke">
+        <li> Mura</li>
+        <li><span>Sava</span></li>
+        <li>Drava</li>
+        <li>Dunav</li>
+    </ol>
+</section>
+    <hr>
+    <section id="section1">
+    <p>3 Pogledajte sljedece video linkove</p>
+
+    <ul>
+        <li><a href="https://www.google.com/" target="_blank">Google</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+        <li> <a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+        <li><a href="https://www.twitter.com/" target="_blank">Twitter</a></li>
+    </ul>
+</section>
+    <hr>
+
+</body>
+</html>
