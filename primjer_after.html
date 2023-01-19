@@ -7,14 +7,25 @@
     <title>Document</title>
     <style>
         p::after{
-            content: " - Zapamti ovo !!";
+            content: "Zapamti ovo !!";
             color: red;
             background-color: yellow;
+        }
+        
+        p::before{
+            content: "Zapamti ovo !!";
+            color: white;
+            background-color: rgb(152, 226, 152);
+        }
+
+        p::first-letter, h1::first-letter{
+            color: rgb(179, 0, 179);
+            font-size: xx-large;
         }
     </style>
 </head>
 <body>
-    <h1>Demo za ::after selektor</h1>
+    <h1>Demo za ::after i ::before selektore</h1>
 
     <p>Moje ime je Pero</p>
     <p>Živim u Osijeku</p>
