@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::after{
+            content: "Zapamti ovo !!";
+            color: red;
+            background-color: yellow;
+        }
+        
+        p::before{
+            content: "Zapamti ovo !!";
+            color: white;
+            background-color: rgb(152, 226, 152);
+        }
+
+        p::first-letter, h1::first-letter{
+            color: rgb(179, 0, 179);
+            font-size: xx-large;
+        }
+
+        p::first-line{
+            background-color: yellow;
+        }
+
+
+        ::marker{
+            color: rgba(255, 34, 200, 0.849);
+            font-size: xx-large;
+        }
+
+        .geek1{
+            list-style-type: circle;
+        }
+
+        .geek2{
+            list-style-type: lower-roman;
+        }
+
+        ::selection{
+            color: rebeccapurple;
+            background: yellow;
+        }
+
+        #section{
+            display: block;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demo za ::after i ::before selektore</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum architecto a molestiae doloribus 
+        <br>
+        accusamus cumque molestias quibusdam cupiditate, magni sapiente, atque facere qui nobis quo, iure consequuntur incidunt dolorem. Fuga!</p>
+    <p>Moje ime je Pero</p>
+    <p>Živim u Osijeku</p>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem officiis saepe deserunt soluta, pariatur delectus,
+         ratione error atque veniam at nesciunt. Maiores optio expedita neque omnis officiis repellat voluptatibus!
+    </p>
+
+    <ul class="geek1">
+        <li>kava</li>
+        <li>mlijeko</li>
+        <li>med</li>
+    </ul>
+
+    <ol class="geek2">
+        <li>prvi</li>
+        <li>drugi</li>
+        <li>treci</li>
+    </ol>
+</body>
+</html>
